@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 主色调 - 橙色 */
+  --primary-orange: #FF6B35;
+  --primary-orange-dark: #E55A2B;
+  --primary-orange-light: #FF8555;
+  
+  /* 背景色 - 深灰/黑 */
+  --bg-dark: #1A1A1A;
+  --bg-medium: #2D2D2D;
+  --bg-light: #3D3D3D;
+  
+  /* 文字颜色 */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-disabled: #666666;
+  
+  /* 状态颜色 */
+  --success: #4CAF50;
+  --warning: #FFC107;
+  --error: #F44336;
+  --info: #2196F3;
+  
+  /* 波形颜色 */
+  --waveform-signal: #00FF00;
+  --waveform-grid: #333333;
+  --waveform-gate-a: #FFD700;
+  --waveform-gate-b: #FF69B4;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* 工业风格按钮 */
+.btn-industrial {
+  @apply bg-primary-orange hover:bg-primary-orange-dark text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-200;
+}
+
+.btn-industrial:active {
+  @apply transform scale-95;
+}
+
+/* 数字显示字体 */
+.font-mono-digits {
+  font-family: 'Roboto Mono', monospace;
+}
